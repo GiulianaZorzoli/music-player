@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head> 
+<body id="body">
+  <main class="music-player">
+
+    <audio src="" id="audio"></audio>
+    <article class="playlist">
+
+      <section class="mood">
+        <label for="change-mood" id="label">Change Mood</label>
+        <select id="change-mood" name="change-mood">
+          <option value="chill" selected="chill">Chill Music</option>
+          <option value="sad">Sad Music</option>
+          <option value="happy">Happy Music</option>
+          <option value="romantic">Romantic Music</option>
+        </select>
+        <input type="submit" value="Select" id="select"/>
+      </section>
+    
+      <section class="song-list">
+        <ul id="songs">
+        </ul>
+      </section>
+      
+      <div class="mood-type">
+        <h4 id="actual-mood"></h4>
+      </div>
+
+    </article>
+
+
+    <article class="player">
+
+      <h1 class="title"  id="title">Select a Song</h1>
+      <img src="" alt="" width="250px" id="cover">
+
+      <div class="progress-container" id="progress-container">
+        <section class="progress" id="progress"></section>
+      </div>
+      
+      <section class="controls">
+        <button class="prev">
+          <i id="prev" class="fas fa-backward"></i>
+        </button>
+        <button class="play">
+          <i id="play" class="fas fa-play"></i>
+        </button>
+        <button class="next">
+          <i id="next" class="fas fa-forward"></i>
+        </button>
+      </section>
+
+    </article>
+    
+  </main>
+  
+</body>
+</html>
